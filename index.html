@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+    <title>ASSIGNMENT</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form">
+
+         <div class="input-wrapper">
+        <div>Enter gross annual income <i class="fa fa-question-circle" aria-hidden="true" title="total income"></i></div>  
+        <input type="text"  placeholder="Enter gross annual income" class="box1" id="r1">
+        <i class="fa-solid fa-circle-exclamation  warning-icon" title="Enter a number"></i>
+        </div>
+            
+        
+
+        <div class="input-wrapper">
+        <div>Enter extra income <i class="fa fa-question-circle" aria-hidden="true" title="your extra income"></i></div>
+        <input type="text" placeholder="Enter extra income" class="box2" id="r2">
+        <i class="fa-solid fa-circle-exclamation  warning-icon" title="Enter a number"></i>
+        </div>
+
+
+        <div class="input-wrapper">
+        <div>Enter age group <i class="fa fa-question-circle" aria-hidden="true" title="your age group"></i></div>
+        <input type="text" class="box3"  id ="r3">
+        <i class="fa-solid fa-circle-exclamation  warning-icon" title="Enter a number"></i>
+            </div>
+
+
+        <div class="input-wrapper">
+         <div>Enter total applicable deductions <i class="fa fa-question-circle" aria-hidden="true" title="enter your deductions"></i></div>
+        <input type="text" class="box4" id="r4" >
+        <i class="fa-solid fa-circle-exclamation  warning-icon" title="Enter a number"></i>
+         </div>
+         
+         
+        </div>
+        
+        <button onclick="onSubmit()" class="submit">Submit</button>
+    </div>
+    
+        <div id="popup" class="popup">
+            <h2>Your overall income will be</h2>
+            <p id="incomeDed"> </p>
+            <p>after deductions</p>
+            <button onclick="closePopup()" class="btn">Close</button>
+
+        </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
